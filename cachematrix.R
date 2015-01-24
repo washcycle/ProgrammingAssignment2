@@ -32,7 +32,7 @@ makeCacheMatrix <- function(x = matrix()) {
         inv_x <<- solve(x)
     }
     
-    # define list of available functions available outside the makeCacheMatrix
+    # define list of functions available outside the makeCacheMatrix
     invisible(list(set = set, get = get, setinv = setinv, getinv = getinv))
 }
 
